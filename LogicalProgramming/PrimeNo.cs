@@ -11,8 +11,13 @@ namespace LogicalProgramming
         int count=0;
         public void checkprime()
         {
+            Console.Write("\n");
+            Console.Write("To Print Prime no:\n");
+            Console.Write("----------------------------------------------\n");
+            Console.Write("\n");
+            Console.WriteLine("enter the Number to check prime no: ");
             int num = Convert.ToInt32(Console.ReadLine());
-            for (int i = 1; i < num; i++)
+            for (int i = 1; i < num/2; i++)
             {
                 if (num % i == 0)
                 {
@@ -21,12 +26,9 @@ namespace LogicalProgramming
             }
             if (count == 2)
             {
-                Console.WriteLine("the {0} is prime", num);
+                Console.WriteLine("no is prime");
             }
-            else
-            {
-                Console.WriteLine("the {0} is not prime", num);
-            }
+           
         }
        
     }
