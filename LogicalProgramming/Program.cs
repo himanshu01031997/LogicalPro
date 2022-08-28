@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please Select Your choice \n1.fibonacci \n2. Prime no\n3.Perfect no\n4.Reverse no\n");
+            Console.WriteLine("Please Select Your choice \n1.fibonacci \n2. Prime no\n3.Perfect no\n4.Reverse no\n5.Temperature conversion\n");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -24,6 +24,10 @@
                 case 4:
                     Reverse reverse = new Reverse();
                     reverse.CheckReverse();
+                    break;
+                case 5:
+                    Temperature temp = new Temperature();
+                    temp.convert();
                     break;
                 default:
                     break;
