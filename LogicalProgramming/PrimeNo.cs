@@ -15,7 +15,7 @@ namespace LogicalProgramming
             Console.Write("To Print Prime no:\n");
             Console.Write("----------------------------------------------\n");
             Console.Write("\n");
-            Console.WriteLine("enter the Number to check prime no: ");
+            Console.WriteLine("Enter the Number to check prime no: ");
             int num = Convert.ToInt32(Console.ReadLine());
             for (int i = 1; i < num/2; i++)
             {
