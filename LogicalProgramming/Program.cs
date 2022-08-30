@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please Select Your choice \n1.fibonacci \n2. Prime no\n3.Perfect no\n4.Reverse no\n5.Temperature conversion\n6.Monthly payment");
+            Console.WriteLine("Please Select Your choice \n1.fibonacci \n2. Prime no\n3.Perfect no\n4.Reverse no\n5.Temperature conversion\n6.Monthly payment\n7.DaysOfWeek");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -32,6 +32,10 @@
                 case 6:
                     MonthlyPayment pay = new MonthlyPayment();
                     pay.pricipal();
+                    break;
+                case 7:
+                    WeekDays weekdays = new WeekDays();
+                    weekdays.Day();
                     break;
                 default:
                     break;
