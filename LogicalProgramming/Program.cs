@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please Select Your choice \n1.fibonacci \n2. Prime no\n3.Perfect no\n4.Reverse no\n5.Temperature conversion\n6.Monthly payment\n7.DaysOfWeek");
+            Console.WriteLine("Please Select Your choice \n1.fibonacci \n2. Prime no\n3.Perfect no\n4.Reverse no\n5.Temperature conversion\n6.Monthly payment\n7.DaysOfWeek\n8.Coupan No");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -36,6 +36,10 @@
                 case 7:
                     WeekDays weekdays = new WeekDays();
                     weekdays.Day();
+                    break;
+                case 8:
+                    CoupanNo coupan=new CoupanNo();
+                    coupan.Distinct();
                     break;
                 default:
                     break;

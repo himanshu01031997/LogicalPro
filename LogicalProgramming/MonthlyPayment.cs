@@ -23,7 +23,6 @@ namespace LogicalProgramming
                 n = Convert.ToInt32(Console.ReadLine());
                 Emi = P * r * Math.Pow(1 + r, n) / (Math.Pow(1 + r, n) - 1);
                 Console.WriteLine("payment for month is {0}",Emi);
-                
             }
         }
        
